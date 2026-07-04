@@ -74,7 +74,7 @@ def xuat_file_word():
 st.set_page_config(page_title="Lấy ý kiến Chi bộ", page_icon="☭", layout="centered")
 
 st.title("☭ HỆ THỐNG THU THẬP Ý KIẾN")
-st.markdown("### :blue[Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.]")
+st.markdown('<p style="color:blue; font-size:14px;">Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.</p>', unsafe_allow_html=True)
 
 
 # Các ô nhập liệu đặt độc lập
