@@ -73,7 +73,7 @@ def xuat_file_word():
 # --- GIAO DIỆN WEB CẢI TIẾN (KHÔNG DÙNG FORM NHÓM) ---
 st.set_page_config(page_title="Lấy ý kiến Chi bộ", page_icon="☭", layout="centered")
 
-st.title("☭ HỆ THỐNG THU THẬP Ý KIẾN CHI BỘ")
+st.title("☭ HỆ THỐNG THU THẬP Ý KIẾN")
 st.write("Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.")
 
 # Các ô nhập liệu đặt độc lập
