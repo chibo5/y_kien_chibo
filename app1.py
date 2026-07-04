@@ -57,7 +57,7 @@ def xuat_file_word():
         for index, row in df_sub.iterrows():
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.2)
-           
+            run_info = p.add_run(f"{stt}. Đồng chí: {row['Họ và Tên']} ({row['Chức vụ Đảng/Chính quyền']}) - [{row['Thời gian']}]\n")
             run_info.font.name = 'Times New Roman'
             run_info.font.size = Pt(11)
             run_info.bold = True
@@ -76,16 +76,15 @@ st.set_page_config(page_title="Lấy ý kiến Chi bộ", page_icon="☭", layou
 st.markdown('<p style="color:red; font-size:17px;"><b>☭ HỆ THỐNG THU THẬP Ý KIẾN CHI BỘ 5</b></p>', unsafe_allow_html=True)
 st.markdown('<p style="color:blue; font-size:15px;">Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.</p>', unsafe_allow_html=True)
 
-
-# Các ô nhập liệu đặt độc lập
-danh_sach_mang = ["Xây dựng Đảng", "Chuyên môn", "Đoàn trường", "Giáo dục thể chất", "Tin học", "Văn phòng", "Ý kiến khác"]
+# Các ô nhập liệu độc lập
+danh_sach_mang = ["Công tác Đảng", "Chuyên môn", "Đoàn trường", "Giáo dục thể chất", "Tin học", "Văn phòng", "Ý kiến khác"]
 mang_selected = st.selectbox("1. Chọn Mảng/Bộ phận đóng góp ý kiến:", danh_sach_mang)
 
 ho_ten = st.text_input("2. Họ và tên (Có thể để trống để giữ bí mật danh tính):", key="input_hoten")
 chuc_vu = st.text_input("3. Chức vụ (Đảng/Chính quyền - Ví dụ: Bí thư Chi..):", key="input_chucvu")
 noi_dung = st.text_area("4. Nội dung ý kiến đóng góp tâm huyết:", key="input_noidung")
 
-# NÚT GỬI ĐỨNG ĐỘC LẬP - BẮT BUỘC PHẢI HIỆN THỊ
+# NÚT GỬI
 btn_submit = st.button("🚀 GỬI Ý KIẾN ĐỐNG GÓP", type="primary")
 
 if btn_submit:
