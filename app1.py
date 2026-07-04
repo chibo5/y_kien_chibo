@@ -97,7 +97,7 @@ if btn_submit:
 
 # --- KHÔNG GIAN BẢO MẬT DÀNH CHO CẤP ỦY ---
 st.markdown("---")
-st.subheader("🔑 Khu vực dành cho Ban Chi ủy (Bảo mật)")
+st.subheader("🔑 Khu vực dành cho Chi ủy (Bảo mật)")
 
 mat_khau_admin = st.text_input("Nhập mật khẩu Admin để tổng hợp dữ liệu:", type="password")
 
