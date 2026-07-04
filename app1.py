@@ -34,7 +34,7 @@ def xuat_file_word():
     title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     run_title = title_p.add_run("BÁO CÁO TỔNG HỢP Ý KIẾN ĐÓNG GÓP\n")
     run_title.font.name = 'Times New Roman'
-    run_title.font.size = Pt(14)
+    run_title.font.size = Pt(13)
     run_title.bold = True
     
     run_subtitle = title_p.add_run(f"Phục vụ sinh hoạt Chi bộ - Ngày tổng hợp: {datetime.now().strftime('%d/%m/%Y')}\n")
