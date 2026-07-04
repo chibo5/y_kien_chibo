@@ -77,11 +77,11 @@ st.title("☭ HỆ THỐNG THU THẬP Ý KIẾN CHI BỘ")
 st.write("Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.")
 
 # Các ô nhập liệu đặt độc lập
-danh_sach_mang = ["Đoàn trường", "Giáo dục thể chất", "Bộ môn Tin học", "Văn phòng", "Ý kiến khác"]
+danh_sach_mang = ["Chuyên môn", "Đoàn trường", "Giáo dục thể chất", "Bộ môn Tin học", "Văn phòng", "Ý kiến khác"]
 mang_selected = st.selectbox("1. Chọn Mảng/Bộ phận đóng góp ý kiến:", danh_sach_mang)
 
 ho_ten = st.text_input("2. Họ và tên (Có thể để trống để giữ bí mật danh tính):", key="input_hoten")
-chuc_vu = st.text_input("3. Chức vụ (Đảng/Chính quyền - Ví dụ: Bí thư Chi đoàn...):", key="input_chucvu")
+chuc_vu = st.text_input("3. Chức vụ (Đảng/Chính quyền - Ví dụ: Bí thư Chi..):", key="input_chucvu")
 noi_dung = st.text_area("4. Nội dung ý kiến đóng góp tâm huyết:", key="input_noidung")
 
 # NÚT GỬI ĐỨNG ĐỘC LẬP - BẮT BUỘC PHẢI HIỆN THỊ
