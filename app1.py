@@ -57,7 +57,7 @@ def xuat_file_word():
         for index, row in df_sub.iterrows():
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.2)
-            run_info = p.add_run(f"{stt}. Đồng chí: {row['Họ và Tên']} ({row['Chức vụ Đảng/Chính quyền']}) - [{row['Thời gian']}]\n")
+            run_info = p.add_run(f"{stt+1}. Đồng chí: {row['Họ và Tên']} ({row['Chức vụ Đảng/Chính quyền']}) - [{row['Thời gian']}]\n")
             run_info.font.name = 'Times New Roman'
             run_info.font.size = Pt(11)
             run_info.bold = True
